@@ -1,15 +1,15 @@
 
 class Sincronizador extends Thread{
-
+    /**/
     static int[][] matriz = {{1,2,3},{2,2,1},{4,5,6}};
     static int indice = 0;
-    public static void avança(){
+    public static void avanca(){
         indice++;
     }
     public void run() {
         int soma = 0;
         int i = Sincronizador.indice;
-        Sincronizador.avança();
+        Sincronizador.avanca();
         for (int j = 0; j < Sincronizador.matriz[i].length; j++){
             soma += Sincronizador.matriz[i][j];
         }
