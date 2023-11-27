@@ -25,8 +25,4 @@ public class Main{
 
             threads[i] = new Sincronizador();
             threads[i].start();
-        }
-
-    }
-
-}
+        }}}
